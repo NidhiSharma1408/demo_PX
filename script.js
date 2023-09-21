@@ -15,6 +15,27 @@ const handleSubmit = (email, password) => {
         (email === "user2@gmail.com" && password === "user") ||
         (email === "user3@gmail.com" && password === "user")
     ) {
+        //passing user and account objects:
+        let id = email.slice(0, -10);
+        console.log(id);
+        aptrinsic("identify",
+            {
+                //User Fields
+                "id": id, // Required for logged in app users
+                "email": email,
+                "firstName": id,
+                "lastName": "User",
+                "signUpDate": 1522697426479, //unix time in ms
+                "plan": "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
+                "price": 95.5,
+                "userHash": "" // optional transient for HMAC identification
+            },
+            {
+                //Account Fields
+                "id": "IBM", //Required
+                "name": "International Business Machine",
+                "Program": "Platinum" // flat custom attributes
+            });
         alert("Login Successful");
     } else {
         alert("Invalid username or password");
