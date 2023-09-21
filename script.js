@@ -37,6 +37,7 @@ const handleSubmit = (email, password) => {
                 "Program": "Platinum" // flat custom attributes
             });
         alert("Login Successful");
+        location.href = "index.html";
     } else {
         alert("Invalid username or password");
     }
