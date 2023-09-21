@@ -36,8 +36,8 @@ const handleSubmit = (email, password) => {
                 "name": "International Business Machine",
                 "Program": "Platinum" // flat custom attributes
             });
-        alert("Login Successful");
-        location.href = "index.html";
+        console.log(location.href);
+        location.href = "index.html"
     } else {
         alert("Invalid username or password");
     }
