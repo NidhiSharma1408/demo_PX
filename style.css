@@ -1,0 +1,38 @@
+.dragred {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: red;
+}
+
+.dragblue {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: blue;
+}
+.draggreen {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: green;
+}
+/* .mynav {
+  margin-bottom: 40px;
+} */
+.content {
+  background-color: rgba(188, 243, 255, 0.614);
+  height: 700px;
+  border: 1px solid rgb(188, 243, 255);
+}
+.center {
+  background-color: rgba(156, 232, 249, 0.872);
+  padding: 20px;
+  margin: auto;
+  margin-top: 200px;
+  width: 300px;
+}
+.footer {
+  width: 100%;
+  padding: 20px;
+}
