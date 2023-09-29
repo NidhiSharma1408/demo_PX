@@ -13,7 +13,8 @@ const handleSubmit = (email, password) => {
         (email === "admin@gmail.com" && password === "admin") ||
         (email === "user1@gmail.com" && password === "user") ||
         (email === "user2@gmail.com" && password === "user") ||
-        (email === "user3@gmail.com" && password === "user")
+        (email === "user3@gmail.com" && password === "user") ||
+        (email === "12as1912002@gmail.com" && password === "nidhi" )
     ) {
         //passing user and account objects:
         let id = email.slice(0, -10);
