@@ -29,7 +29,8 @@ const handleSubmit = (email, password) => {
                 "signUpDate": 1522697426479, //unix time in ms
                 "plan": "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
                 "price": 95.5,
-                "userHash": "" // optional transient for HMAC identification
+                "userHash": "",
+                "MyCustomAttribute": Math.floor(Math.random() * 100);// optional transient for HMAC identification
             },
             {
                 //Account Fields
