@@ -7,7 +7,7 @@
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-JN5UZ01B6XFV-2");
 
 
-const handleSubmit = (email, password) => {
+const handleSubmit = (email, password, name) => {
     console.log(email, password)
     if (
         (email === "admin@gmail.com" && password === "admin") ||
@@ -38,6 +38,8 @@ const handleSubmit = (email, password) => {
                 "name": "International Business Machine",
                 "Program": "Platinum" // flat custom attributes
             });
+        aptrinsic('set', 'user', { 'firstName': name, 'role': 'Software Engineer' });
+
         console.log(location.href);
         location.href = "index.html"
     } else {

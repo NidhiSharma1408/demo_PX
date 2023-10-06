@@ -64,11 +64,15 @@
               id="password"
             />
           </div>
+          <div class="mb-3">
+            <lable class="form-label" for="name">Change FirstName: </lable>
+            <input class="form-control" type="text" name="name" id="name" />
+          </div>
           <div class="mb-3 text-center">
             <button
               value="submit"
               class="btn btn-primary"
-              onclick="handleSubmit(email.value,password.value)"
+              onclick="handleSubmit(email.value, password.value, name.value)"
             >
               Login
             </button>
