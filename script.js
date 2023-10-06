@@ -14,7 +14,7 @@ const handleSubmit = (email, password) => {
         (email === "user1@gmail.com" && password === "user") ||
         (email === "user2@gmail.com" && password === "user") ||
         (email === "user3@gmail.com" && password === "user") ||
-        (email === "12as1912002@gmail.com" && password === "nidhi" )
+        (email === "12as1912002@gmail.com" && password === "nidhi")
     ) {
         //passing user and account objects:
         let id = email.slice(0, -10);
@@ -30,7 +30,7 @@ const handleSubmit = (email, password) => {
                 "plan": "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
                 "price": 95.5,
                 "userHash": "",
-                "MyCustomAttribute": Math.floor(Math.random() * 100);// optional transient for HMAC identification
+                "MyCustomAttribute": Math.floor(Math.random() * 100)// optional transient for HMAC identification
             },
             {
                 //Account Fields

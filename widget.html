@@ -65,32 +65,50 @@
       <div class="footer text-bg-dark">Gainsight</div>
     </div>
     <script>
-      let count = 0; 
+      let count = 0;
       const date = new Date();
       $(function () {
-        count = count +1;
+        count = count + 1;
         $(".dragred").draggable({
           stop: function r() {
-            aptrinsic('track','DragCustomEvent', {"name":"red drag", "color" : 'red', "count": count , "date": date, "flag": Math.random() < 0.5});
-          }
+            aptrinsic("track", "DragCustomEvent", {
+              name: "red drag",
+              color: "red",
+              count: count,
+              date: date,
+              flag: Math.random() < 0.5,
+            });
+          },
         });
       });
 
       $(function () {
-        count = count +1;
+        count = count + 1;
         $(".dragblue").draggable({
           stop: function r() {
-            aptrinsic('track','DragCustomEvent', {"name":"blue drag", "color" : 'blue', "count": count , "date": date, "flag": Math.random() < 0.5});
-          }
+            aptrinsic("track", "DragCustomEvent", {
+              name: "blue drag",
+              color: "blue",
+              count: count,
+              date: date,
+              flag: Math.random() < 0.5,
+            });
+          },
         });
       });
 
       $(function () {
-        count = count +1;
+        count = count + 1;
         $(".draggreen").draggable({
           stop: function r() {
-            aptrinsic('track','DragCustomEvent', {"name":"green drag", "color" : 'green', "count": count , "date": date, "flag": Math.random() < 0.5});
-          }
+            aptrinsic("track", "DragCustomEvent", {
+              name: "green drag",
+              color: "green",
+              count: count,
+              date: date,
+              flag: Math.random() < 0.5,
+            });
+          },
         });
       });
     </script>
