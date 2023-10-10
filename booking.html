@@ -55,7 +55,7 @@
         <div class="row cabs flex-row">
           <div class="pool col-md-2 ui-widget-content">
             <img
-              id="pool"
+              id="1"
               src="./img/Pool.webp"
               draggable="true"
               ondragstart="drag(event)"
@@ -64,7 +64,7 @@
           </div>
           <div class="uber_green col-md-2 ui-widget-content">
             <img
-              id="uber_green"
+              id="2"
               src="./img/uber_green.webp"
               draggable="true"
               ondragstart="drag(event)"
@@ -82,7 +82,7 @@
           </div>
           <div class="uberXL col-md-2 ui-widget-content">
             <img
-              id="uberXL"
+              id="3"
               src="./img/UberXL.webp"
               draggable="true"
               ondragstart="drag(event)"
@@ -91,7 +91,7 @@
           </div>
           <div class="comfort col-md-2 ui-widget-content">
             <img
-              id="comfort"
+              id="4"
               src="./img/Comfort.webp"
               draggable="true"
               ondragstart="drag(event)"
@@ -100,7 +100,7 @@
           </div>
           <div class="black col-md-2 ui-widget-content">
             <img
-              id="black"
+              id="5"
               src="./img/Black.webp"
               draggable="true"
               ondragstart="drag(event)"
@@ -140,15 +140,35 @@
       function drag(ev) {
         console.log("dragging...", ev.target.id);
         ev.dataTransfer.setData("id", ev.target.id);
+        switch (ev.target.id) {
+          case "1":
+            ev.dataTransfer.setData("name", "UberX Share");
+            break;
+          case "2":
+            ev.dataTransfer.setData("name", "Uber Green");
+            break;
+          case "3":
+            ev.dataTransfer.setData("name", "Uber Auto");
+            break;
+          case "4":
+            ev.dataTransfer.setData("name", "Uber Comfort");
+            break;
+          case "4":
+            ev.dataTransfer.setData("name", "Uber Black");
+            break;
+          default:
+        }
       }
       function drop(ev, el) {
         ev.preventDefault();
         const id = ev.dataTransfer.getData("id");
+        const name = ev.dataTransfer.getData("name");
         console.log(id, el);
         console.log(document.getElementById(id));
         el.innerHTML = document.getElementById(id).outerHTML;
         aptrinsic("track", "SelectCabCustomEvent", {
-          name: id,
+          id,
+          name,
         });
       }
     </script>
