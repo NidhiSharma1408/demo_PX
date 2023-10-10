@@ -30,6 +30,7 @@ const handleSubmit = (email, password, name) => {
                 "plan": "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
                 "price": 95.5,
                 "userHash": "",
+                "Language":"hi",
                 "MyCustomAttribute": Math.floor(Math.random() * 100)// optional transient for HMAC identification
             },
             {
