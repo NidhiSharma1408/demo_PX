@@ -39,6 +39,7 @@ const handleSubmit = (email, password, name) => {
                 "name": "International Business Machine",
                 "Program": "Platinum" // flat custom attributes
             });
+        aptrinsic('set', 'globalContext', {"version":12345, "name":"Salesforce", "type":"Iframe"});
         aptrinsic('set', 'user', { 'firstName': name, 'role': 'Software Engineer' });
 
         console.log(location.href);
