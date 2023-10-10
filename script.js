@@ -8,7 +8,7 @@
 
 
 const handleSubmit = (email, password, name) => {
-    console.log(email, password)
+    console.log(email, password, name)
     if (
         (email === "admin@gmail.com" && password === "admin") ||
         (email === "user1@gmail.com" && password === "user") ||

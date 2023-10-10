@@ -36,3 +36,15 @@
   width: 100%;
   padding: 20px;
 }
+
+img {
+  width: 150px;
+  border: 1px solid greenyellow;
+}
+
+.booked {
+  width: 200px;
+  height: 130px;
+  border: 1px solid greenyellow;
+  background-color: white;
+}
